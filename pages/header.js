@@ -4,7 +4,8 @@ import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import styles from '../styles/header.module.css';
-import logo from '../assets/gwd.png';
+import logo from '../assets/logo.svg';
+import imgc from '../assets/intro-mobile.png';
 
 export default function Header(){
     return(
@@ -15,7 +16,7 @@ export default function Header(){
                 <a className="navbar-brand">
                     <Image
                     src={logo}
-                    alt="Picture of the author"
+                    alt="Greatwebdev"
                     width="100"
                     layout="responsive"
                     />
@@ -65,6 +66,31 @@ export default function Header(){
                 </div>
                 </div>
             </nav>
+            <div id="hero-area" className="hero-area-bg">
+                <div className="container">      
+                <div className="row">
+                    <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                    <div className="contents banner_area">
+                        <h1 className="head-title">Building A Web3<br />Powered Enterprise<br />World</h1>
+                        <p>You deserve an unmatched consulting experience. Enter the virtual world with our web3 consulting services enabled by technology and sustained through capabilities. We help our clients create change that matters.</p>
+                        <div className="header-button">
+                        <a href="#contact" className="btn btn-common">Try Whitepace free</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div className="intro-img">
+                            <Image
+                            src={imgc}
+                            alt="Greatwebdev"
+                            width="100"
+                            layout="responsive"
+                            />
+                    </div>            
+                    </div>
+                </div> 
+                </div> 
+          </div>
         </header>
     )
 }

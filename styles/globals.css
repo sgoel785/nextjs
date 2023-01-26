@@ -1,4 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+@font-face {
+  font-family: "Inter-Black";
+  src: url('../styles/fonts/Inter-Black.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url('../styles/fonts/Inter-Bold.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url('../styles/fonts/Inter-ExtraBold.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-ExtraLight";
+  src: url('../styles/fonts/Inter-ExtraLight.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url('../styles/fonts/Inter-Light.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url('../styles/fonts/Inter-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url('../styles/fonts/Inter-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url('../styles/fonts/Inter-SemiBold.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Inter-Thin";
+  src: url('../styles/fonts/Inter-Thin.ttf') format("truetype");
+}
 html {
   overflow-x: hidden;
 }
@@ -7,7 +42,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter-Regular';
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -24,9 +59,8 @@ dt,dl {
 
 h1, h2, h3, h4 {
   font-size: 38px;
-  color: #333333;
   font-weight: 700;
-  font-family: 'Arvo', serif;
+  font-family: 'Inter-Bold';
 }
 ul.list-style {
     padding: 15px;
@@ -62,10 +96,9 @@ a a:focus {
 
 p {
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter-Regular';
   margin: 0px;
   font-size: 16px;
-  color: #333;
 }
 
 ul, ol {
@@ -168,7 +201,7 @@ div#navbarCollapse {
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  color: #333;
+  color: #fff;
   font-weight: 400;
   padding: 7px 0;
   cursor: pointer;
@@ -180,7 +213,7 @@ div#navbarCollapse {
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
-  background-color: #1e7e34;
+  background-color: #fff;
   content: '';
   display: block;
   height: 2px;
@@ -207,14 +240,14 @@ div#navbarCollapse {
 .navbar-expand-md .navbar-nav .nav-link.active,
 .navbar-expand-md .navbar-nav .nav-link.open,
 .navbar-expand-md .navbar-nav .open > .nav-link {
-  color: #1e7e34 !important;
+  color: #fff !important;
   width: 100%;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link:hover::before,
 .navbar-expand-md .navbar-nav .nav-link:focus {
-  color: #1e7e34;
+  color: #fff;
   width: 100%;
   transition: width 1s;
   -webkit-transition: width 1s;
@@ -223,6 +256,7 @@ div#navbarCollapse {
 
 .navbar {
   padding: 10px 0;
+  background-color: #043873;
 }
 
 .navbar li.active a.nav-link {
@@ -232,3 +266,65 @@ div#navbarCollapse {
   text-align: center;
 }
 
+/** Hero Area **/
+#hero-area {
+  background-image: url(../assets/Element.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 710px;
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0 80px;
+}
+.hero-area-bg{
+  background-color: #043873;
+  color: #fff;
+}
+.hero-area-bg h1, .hero-area-bg p, .hero-area-bg a{
+  color: #fff;
+}
+.contents.banner_area {
+  padding: 10% 0px;
+}
+.hero-area-bg a{
+  background-color: #4F9CF9;
+}
+.hero-area-bg a:hover{
+  background-color: #fff;
+  color: #043873;
+}
+/** Indus Leading **/
+
+.indus-lead{
+    background: #4F9CF9;
+    border-radius: 34px;
+    padding: 50px;
+    color: #fff;
+}
+.indus-lead a{
+  background-color: #043873;
+  color: #fff;
+}
+.indus-lead a:hover{
+  background-color: #fff;
+  color: #043873;
+}
+.Management-list li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Management-list li{
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+  text-align: left;
+}
