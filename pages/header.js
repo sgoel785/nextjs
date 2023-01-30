@@ -32,6 +32,27 @@ export default function Header(){
                         </Link>
                     </li>
                     <li className="nav-item">
+                        <Link legacyBehavior href="/add-post">
+                            <a className="nav-link" >
+                            Add Post
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link legacyBehavior href="/sign-up">
+                            <a className="nav-link" >
+                            Sign Up
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link legacyBehavior href="/sign-in">
+                            <a className="nav-link" >
+                            Sign In
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
                         <a className="nav-link" href="/about-us">
                         About Us
                         </a>
@@ -66,7 +87,7 @@ export default function Header(){
                 </div>
                 </div>
             </nav>
-            <div id="hero-area" className="hero-area-bg">
+            <div id="hero-area" className={"hero-area-bg "+styles.hide}>
                 <div className="container">      
                 <div className="row">
                     <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
